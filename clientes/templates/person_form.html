@@ -1,3 +1,4 @@
+
 {% extends 'base.html' %}
 {% load bootstrap %}
 
@@ -11,15 +12,3 @@
         <button type="submit" class="btn btn-primary">Salvar</button>
     </form>
 {% endblock %}
-
-
-
-
-
-    <form method="POST" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form }}
-        <button type="submit">Salvar</button>
-
-    </form>
-
