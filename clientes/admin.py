@@ -5,3 +5,4 @@ admin.site.register(Person)
 admin.site.register(Documento)
 admin.site.register(Venda)
 # Register your models here.
+~""
