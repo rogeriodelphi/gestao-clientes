@@ -21,11 +21,13 @@ class Person(models.Model):
         return self.first_name + ' ' + self.last_name
     
 
+
 class Venda(models.Model):
-    numero= models.CharField(max_length=7)
-    valor= models.DecimalField(max_digits=7, decimal_places=2)
-    desconto= models.DecimalField(max_digits=7, decimal_places=2)
-    pessoa=  models.ForeignKey(Person, null=True, blank=True, on_delete=models.PROTECT)
+    numero = models.CharField(max_length=7)
+    valor = models.DecimalField(max_digits=5, decimal_places=2)
+    desconto = models.DecimalField(max_digits=5, decimal_places=2)
+    impostos = models.DecimalField(max_digits=5, decimal_places=2)
+    pessoa = models.ForeignKey(Person, null=True, blank=True, on_delete=models.PROTECT)
 
     def __str__(self):
         return self.numero
