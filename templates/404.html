@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<h1 class="text-center">Erro 400</h1>
+<h4 class="text-center">Objeto não encontrado!</h4><br>
+
+<h6 class="text-center">{{ request_path }}</h6>
+<h6 class="text-center">{{ exception }}</h6>
+{% endblock main %}
