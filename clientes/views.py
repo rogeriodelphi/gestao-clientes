@@ -34,7 +34,6 @@ def persons_update(request, id):
 
 @login_required
 def persons_delete(request, id):
-    1/0
     person = get_object_or_404(Person, pk=id)
 
     if request.method == 'POST':
