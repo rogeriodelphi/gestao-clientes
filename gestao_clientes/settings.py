@@ -70,7 +70,6 @@ TEMPLATES = [
         },
     },
 ]
-
 WSGI_APPLICATION = 'gestao_clientes.wsgi.application'
 
 
